@@ -32,7 +32,7 @@ public class Computer {
                 '}';
     }
 
-    enum OperatingSystem{
+    public enum OperatingSystem{
         Windows,
         Linux,
         MacOS
@@ -72,6 +72,46 @@ public class Computer {
         public Computer build() {
             return new Computer(ram, cores, name, operatingSystem);
         }
+    }
+
+    public int getRam() {
+        return ram;
+    }
+
+    public void setRam(int ram) {
+        this.ram = ram;
+    }
+
+    public int getCores() {
+        return cores;
+    }
+
+    public void setCores(int cores) {
+        this.cores = cores;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public UUID getNumber() {
+        return number;
+    }
+
+    public void setNumber(UUID number) {
+        this.number = number;
+    }
+
+    public OperatingSystem getOperatingSystem() {
+        return operatingSystem;
+    }
+
+    public void setOperatingSystem(OperatingSystem operatingSystem) {
+        this.operatingSystem = operatingSystem;
     }
 
     public boolean isFast(){
